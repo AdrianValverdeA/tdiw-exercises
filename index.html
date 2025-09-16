@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- completa -->
+        <meta charset="UTF-8" />
+        <title>Escola d'Enginyeria</title>
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
-            <!-- completa -->
+            <a href="http://www.uab.cat"> <img src="img/uab.png" alt="Logotip UAB" width="200"> </a>
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
@@ -15,6 +16,16 @@
             </header>
             <ul>
                 <!-- completa -->
+                <li> <a href="https://www.uab.cat/grauEI" target="_blank"> Enginyeria Informàtica </a> </li>
+                <ul>
+                    <li>Menció Enginyeria del software </li>
+                    <li>Menció Enginyeria de computadors </li>
+                    <li>Menció Computació </li>
+                    <li><a href="mencions/TI/index.html" target="_blank"> Menció Tecnologies de la informació</a></li>
+                </ul>
+                <li>Enginyeria de Sistemes de Telecomunicació</li>
+                <li>Enginyeria Electrònica de Telecomunicació</li>
+                <li>Enginyeria Química</li>
             </ul>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
@@ -25,6 +36,28 @@
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
                 <!-- completa -->
+                Nom complet: <input type="text" name="nom"><br />
+                Password: <input type="password" name="clau"><br />
+                Grau: <select name="grau">
+                    <option value=GEI>Enginyeria Informàtica</option>
+                    <option value=GEST>Enginyeria de Sistemes de Telecomunicació</option>
+                    <option value=GEET>Enginyeria Electrònica de Telecomunicació</option>
+                    <option value=GEQ>Enginyeria Química</option>
+
+                </select>
+
+                <p> Tria la menció que t'atrau més: </p>
+
+                <select name="mencio">
+                    <option value=ES>Enginyeria del software</option>
+                    <option value=EC>Enginyeria de computadors</option>
+                    <option value=C>Computació</option>
+                    <option value=TIC>Tecnologies de la informació</option>
+
+                </select><br /><br />
+
+                <input type="submit" value="Registrar-me"/><br />
+
             </form>
             <hr />
         </section>
@@ -35,11 +68,39 @@
             </header>
             <table border="1">
                 <!-- completa -->
+                <tr>
+                    <th colspan="2"> Escola d'Enginyeria</th>
+                    <th colspan="2"> Ciències</th>
+                </tr>
+                <tr>
+                    <td>Enginyeria Informàtica</td>
+                    <td>300</td>
+                    <td>Matemàtiques</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Enginyeria de Sistemes de Telecomunicació</td>
+                    <td>150</td>
+                    <td rowspan="2">Física</td>
+                    <td rowspan="2">100</td>
+                </tr>
+                <tr>
+                    <td>Enginyeria Química</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>750</td>
+                    <td>Total</td>
+                    <td>300</td>
+                </tr>
             </table>
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
         <footer>
             <!-- completa -->
+            <img src="img/campus-e.png" alt="Logotip UAB" width="100">
+            <p>&copy; Univesitat Autònoma de Barcelona. Campus d'Excel·lència</p>
         </footer>
     </body>
 </html>
